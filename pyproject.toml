@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "iggie2002-inferobs_jd373"
+name = "iggie2002-gpu_failure_recovery_pattern_locate"
 version = "0.1.0"
 description = "用一组明示的正则规则扫描输入，报告模型服务可观测性工程师·GPU 故障与作业自愈相关的命中行与片段"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://iggie2002.github.io"
-Repository = "https://github.com/iggie2002/inferobs_jd373"
-Issues = "https://github.com/iggie2002/inferobs_jd373/issues"
+Repository = "https://github.com/iggie2002/gpu_failure_recovery_pattern_locate"
+Issues = "https://github.com/iggie2002/gpu_failure_recovery_pattern_locate/issues"
 
 [project.scripts]
-inferobs_jd373 = "inferobs_jd373:main"
+gpu_failure_recovery_pattern_locate = "gpu_failure_recovery_pattern_locate:main"
 
 [tool.setuptools]
-py-modules = ["inferobs_jd373"]
+py-modules = ["gpu_failure_recovery_pattern_locate"]

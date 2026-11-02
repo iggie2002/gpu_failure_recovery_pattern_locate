@@ -1,11 +1,11 @@
-# inferobs_jd373
+# gpu_failure_recovery_pattern_locate
 
 **用规则在模型服务可观测性工程师·GPU 故障与作业自愈里定位可疑位置。**
 
-`inferobs_jd373` —— 用一组明示的正则规则扫描输入，报告模型服务可观测性工程师·GPU 故障与作业自愈相关的命中行与片段
+`gpu_failure_recovery_pattern_locate` —— 用一组明示的正则规则扫描输入，报告模型服务可观测性工程师·GPU 故障与作业自愈相关的命中行与片段
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`inferobs_jd373.py` 拷走就能用
+- 单文件，`gpu_failure_recovery_pattern_locate.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install iggie2002-inferobs_jd373
+pip install iggie2002-gpu_failure_recovery_pattern_locate
 ```
 
 装完直接用命令名调用：
 
 ```bash
-inferobs_jd373 --help
+gpu_failure_recovery_pattern_locate --help
 ```
 
-也可以不用安装，直接把 `inferobs_jd373.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `gpu_failure_recovery_pattern_locate.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ inferobs_jd373 --help
 ## 用法
 
 ```bash
-python inferobs_jd373.py --file input.txt
-python inferobs_jd373.py --text "示例内容"
-python inferobs_jd373.py --file input.txt --json
+python gpu_failure_recovery_pattern_locate.py --file input.txt
+python gpu_failure_recovery_pattern_locate.py --text "示例内容"
+python gpu_failure_recovery_pattern_locate.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python inferobs_jd373.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_inferobs_jd373.py
+python test_gpu_failure_recovery_pattern_locate.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_inferobs_jd373.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/iggie2002/inferobs_jd373>
+- GitHub 仓库：<https://github.com/iggie2002/gpu_failure_recovery_pattern_locate>
 
 ---
 
@@ -79,7 +79,7 @@ python test_inferobs_jd373.py
 iggie2002 做模型服务可观测性工程师·GPU 故障与作业自愈相关的问题，方向对标宇树科技的负责人模型服务可观测性工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://iggie2002.github.io>
-- 仓库：<https://github.com/iggie2002/inferobs_jd373>
+- 仓库：<https://github.com/iggie2002/gpu_failure_recovery_pattern_locate>
 
 ## 许可
 
